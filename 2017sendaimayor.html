@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://sole-color-blog.com/demos/20170403/ -->
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>仙台市長選2017_ボートマッチ</title>
+  <meta name="description"
+        content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。">
+  <meta property="og:title" content="仙台市長選2017_ボートマッチ"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://mediage.org/votematch"/>
+  <meta property="og:image" content="http://mediage.org/votematch/img/snsogp.png"/>
+  <meta property="og:site_name" content="仙台市長選2017_ボートマッチ"/>
+  <meta property="og:description"
+        content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。"/>
+
+  <!-- Facebook用設定 -->
+  <meta property="fb:app_id" content="727427227437012"/>
+
+  <!-- ※Twitter共通設定 -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mediage_info">
+  <meta name="twitter:creator" content="@mediage_info">
+  <meta name="twitter:title" content="仙台市長選2017_ボートマッチ">
+  <meta name="twitter:description"
+        content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。">
+  <meta name="twitter:image" content="http://mediage.org/votematch/img/snsogp.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <!--ファビコン設定-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/reset.css"><!--リセット-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.circliful.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+
+  <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src="js/shindan.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-48937819-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+
+<body cz-shortcut-listen="true">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.9&appId=727427227437012";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
+
+  <div class="banner flex grayscale shadow tobo">
+    <a id="contact-link" href="2017sendaimayor.html" class="text nodecoration flex horizontal"><p>Sendai Vote Match
+      2017</p><i
+        class="material-icons">send</i></a>
+  </div>
+</div>
+<div id="wrapper">
+
+  <div class="question">
+    <h1>アンケートに答えると、<br>あなたと立候補者の意見の一致度がわかります！</h1>
+    <div class="center">
+      <a class="button-1" data-remodal-target="modal" href="">ボートマッチとは？</a>
+    </div>
+    <!--モーダルウィンドウ-->
+    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <div class="modal-w center">
+        <h2><i class="fa fa-paper-plane fa-blue" aria-hidden="true"></i> ボートマッチとは</h2>
+        <p>有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。<br>
+          より気軽に、ゲーム感覚で政治や選挙に触れる機会がつくれないかと考え、仙台市長選挙では初となるボートマッチを公開しました。</p>
+
+        <p>なお、アンケートの集計は厳密に行っておりますが、測定結果は、絶対的なものではありません。<br>
+          あなたが今回の選挙で誰に投票するかの１つの参考に、あるいは、立候補者をより詳しく知るための機会として、ご活用ください。</p>
+
+        <h2><i class="fa fa-check fa-blue" aria-hidden="true"></i> 回答方法</h2>
+        <p>それぞれの問いについて、該当する答えを選択肢から選んでください。どうしても合致しない場合は、「無回答（わからない）」を選んでください。<br>
+          問いに「3つ選んでください」と書かれている場合は、チェックボックスを3つチェックしてください。チェックが３つ以下でも測定結果を見ることはできますが、立候補者とのマッチ率は下がる場合があります。<br>
+          回答漏れがあった場合は、「診断する」のボタンを押すことができませんでの、ご注意ください。</p>
+
+        <h2><i class="fa fa-calculator fa-blue" aria-hidden="true"></i> マッチ率の計算方法</h2>
+        <p>あなたと立候補者が同じ回答をした回答について、「マッチした」とみなします。<br>
+          ただし、「無回答」を選んだ場合は、一致したとみなされません（ある設問に対して、あなたと立候補者がどちらも無回答だったとしても、マッチしなかったことになります）。</p>
+
+        <p>設問は、３つまで選択する問いが２種類と、１つだけ選択する問いが14種類あります。<br>
+          つまり全部で20の選択肢がありますので、１つ選択がマッチした場合のマッチ率は５％になります。</p>
+
+        <p>なお立候補者に「無回答」の設問がある場合、その候補者とのマッチ率は100%になりませんので予めご了承ください。<br>
+          今回のアンケートでは菅原氏が6問無回答のため最大70%、郡氏が3問無回答のため最大85%、林・大久保両氏は全問解答のため最大100%となります。<br>
+          また、純粋にアンケート結果に基づいてマッチ率を算出しているため、立候補者が公約として掲げている内容と回答が一致しない場合があります。</p>
+        <a class="block center small" href="2017sendaimayor-answer.html">【候補者の回答を確認したい場合は、こちらをクリックしてください】</a>
+        <p class="small center m20">企画：NPO法人メディアージ・TOHOKU360<br>制作：NPO法人メディアージ・ゆるてっく仙台</p>
+        <!--<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>-->
+        <button data-remodal-action="confirm" class="remodal-confirm">戻る</button>
+      </div>
+    </div>
+    <!--モーダルウィンドウここまで-->
+    <div class="share">
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+        <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="http://mediage.org/votematch"
+             style="display: none;"></div>
+        <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async"
+                defer="defer"></script>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+                <span>◯あなたが市長に求める「特に重視する政策」を、３つまで選んでください<br>
+        （選ばなかった政策を重視しないということではなく、最も重要と考えるものを３つ選んでください）</span>
+        <label><input type="checkbox" class="under3 typeD">財政健全化</label>
+        <label><input type="checkbox" class="under3">農業振興</label>
+        <label><input type="checkbox" class="under3">産業振興</label>
+        <label><input type="checkbox" class="under3">学術・スポーツ振興</label>
+        <label><input type="checkbox" class="under3 typeC">市民活動・まちづくり</label>
+        <label><input type="checkbox" class="under3 typeA typeB">起業支援・起業家育成</label>
+        <label><input type="checkbox" class="under3 typeB">雇用対策</label>
+        <label><input type="checkbox" class="under3">観光・インバウンド</label>
+        <label><input type="checkbox" class="under3 typeB typeC typeD">学校教育・いじめ対策</label>
+        <label><input type="checkbox" class="under3 typeA typeC">子育て支援</label>
+        <label><input type="checkbox" class="under3">子どもの貧困対策</label>
+        <label><input type="checkbox" class="under3 typeA">社会福祉（高齢者・障害者等）</label>
+        <label><input type="checkbox" class="under3">都市整備・再開発</label>
+        <label><input type="checkbox" class="under3 typeD">公共交通</label>
+        <label><input type="checkbox" class="under3">環境保護</label>
+      </li>
+    </ul>
+    <ul>
+      <li class="radio_button_wrapper">
+        <span>Q1. 東日本大震災から６年。仙台市は東北の中心都市として、他の市町村の復興にも積極的に支援をすべきだと思いますか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">職員の派遣（人件費）なども、予算措置の中に含まれます。
+          仙台市では、平成24年度から県内の他の自治体に職員を派遣しています。平成28年度には10市町に計30名の職員が派遣されています。また、熊本地震や、岩手県の台風被害など他県の被災地に対しても職員派遣や支援物資提供を行いました。</p>
+        <label><input type="radio" name="q01" class="typeA typeD typeC"> 予算措置を含め他市町村を支援すべき</label>
+        <label><input type="radio" name="q01" class=""> 予算措置を伴わない範囲に留めるべき</label>
+        <label><input type="radio" name="q01" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q2. 仙台市中心部の開発について、どちらを重視しますか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          中央商店街とは、ここでは青葉区中央および青葉区一番町にある５商店街（ハピナ名掛丁・クリスロード・マーブルロードおおまち・一番町四丁目商店街・サンモール一番町）のことを指しています。<br>
+          仙台駅周辺では、近年大型商業ビルの開業（PARCO2・エスパル仙台東館など）が相次いでいます。</p>
+        <label><input type="radio" name="q02" class="typeA typeB typeD"> 中央商店街（アーケード）</label>
+        <label><input type="radio" name="q02" class=""> 仙台駅周辺（西口・東口）</label>
+        <label><input type="radio" name="q02" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q3. 仙台市役所本庁舎の建て替えをすべきか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          青葉区国分町3丁目にある仙台市役所本庁舎は、平成20年に一度耐震工事を完了したものの、建設から50年以上が経ち、老朽化が進んでいます。今後10年ほどで、コンクリート構造体の耐用限界を迎えると言われています。</p>
+        <label><input type="radio" name="q03" class="typeA typeD typeB typeC"> そう思う </label>
+        <label><input type="radio" name="q03" class=""> 一部改修でよい</label>
+        <label><input type="radio" name="q03" class=""> そう思わない</label>
+        <label><input type="radio" name="q03" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q4. 地下鉄東西線沿線の開発を、さらに財源を投入して進めるべきか	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">地下鉄東西線は、計画当初の予測を大幅に下回る利用者数になっています。一方、東西線沿線は一部用途制限が緩和され、仙台市は住宅や商業施設の建設を促そうとしています。</p>
+        <label><input type="radio" name="q04" class="typeA typeD"> そう思う </label>
+        <label><input type="radio" name="q04" class="typeC"> そう思わない</label>
+        <label><input type="radio" name="q04" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q5. 地下鉄南北線を隣接する市（富谷市や名取市）まで延伸すべきか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          仙台市に隣接する名取市や富谷市は、仙台市内で働く人たちのベッドタウンとなっており、両市の市長は、それぞれの市内まで地下鉄南北線を延伸することを公約に掲げています。しかし、地下鉄路線の延伸には莫大な工事費がかかると言われています。</p>
+        <label><input type="radio" name="q05" class="typeA typeD"> そう思う</label>
+        <label><input type="radio" name="q05" class="typeC"> そう思わない</label>
+        <label><input type="radio" name="q05" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q6. 仙台城跡の再建に税金を投入すべきか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          仙台城は、明治時代にそのほとんどが火災等で失われ、残っていた大手門なども第二次世界大戦時の空襲により焼失しました。大手門については復元が検討されれいますが、工事の課題も多く具体的になっていません。また、内城（本丸）がなければ観光スポットにならないとの声もありますが、費用面の問題などから具体的な復元計画はありません。</p>
+        <label><input type="radio" name="q06" class="typeA"> 内城まで再建する</label>
+        <label><input type="radio" name="q06" class="typeB typeC"> 大手門まで再建する</label>
+        <label><input type="radio" name="q06" class="typeD"> しなくて良い</label>
+        <label><input type="radio" name="q06" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q7. 新しく稼働する石炭発電所（仙台パワーステーション）について	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          仙台パワーステーションは、伊藤忠商事の子会社や関西電力によって仙台港につくられた、石炭発電所です。小規模火力発電所として開発されたため、建設当時は環境影響評価（アセスメント）の必要はありませんでしたが、環境への影響を心配する声もあがっています。</p>
+        <label><input type="radio" name="q07" class=""> 稼働は問題ない</label>
+        <label><input type="radio" name="q07" class="typeA typeD typeC"> 環境影響評価等による監視を強めていく</label>
+        <label><input type="radio" name="q07" class=""> 稼働中止を求める</label>
+        <label><input type="radio" name="q07" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q8. 女川原発の再稼働について、近隣自治体として</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          女川原子力発電所は、仙台市からおよそ50kmの距離にありますが、重大事故発生時は近隣自治体からの避難者の受け入れが想定され、また放射性物質の飛散の影響を懸念する声もあがっています。</p>
+        <label><input type="radio" name="q08" class=""> 賛成・容認する </label>
+        <label><input type="radio" name="q08" class="typeA typeD"> 反対する</label>
+        <label><input type="radio" name="q08" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q9. 雇用確保のために、より優先するのは	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          県外からの企業誘致によって多くの雇用が生まれると期待されますが、一方で仙台市は地元資本の大企業が少ない支店経済都市と言われ、法人税の流出につながっています。地元企業を支援し、大きくしていくことでも雇用は生まれますが、成長には時間がかかります。</p>
+        <label><input type="radio" name="q09" class=""> 企業の誘致 </label>
+        <label><input type="radio" name="q09" class="typeA typeD typeB typeC"> 地元企業の育成</label>
+        <label><input type="radio" name="q09" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q10. 民泊・白タクシーの規制緩和を推進すべきか</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          いわゆる「シェアリングエコノミー」と呼ばれる仕組みが話題になっています。Airbnb、UBERなど、個人の資産（部屋、車など）を貸し借りする仕組みが世界中で広がり、新しいビジネスチャンスとして注目されています。一方で、安全面などに課題があり、現状では違法な貸し借りが横行している側面もあります。仙台市は国家戦略特区なので、他都市よりも先にシェアリングエコノミーに取り組むことが出来ます。</p>
+        <label><input type="radio" name="q10" class="typeA typeD"> そう思う </label>
+        <label><input type="radio" name="q10" class="typeC"> そう思わない</label>
+        <label><input type="radio" name="q10" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q11. 市街地での受動喫煙対策について	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          他人の煙草の煙を吸ってしまう、いわゆる受動喫煙の対策について、日本は世界保健機構などから遅れを指摘されています。一方で、地方たばこ税は地方自治体の税収にも寄与しています。受動喫煙については、自治体ごとに条例で対策をしているところもありますが、仙台市ではガイドラインの策定に留まっており、条例による罰則などはありません。</p>
+        <label><input type="radio" name="q11" class="typeA typeC typeD"> より厳しくすべき </label>
+        <label><input type="radio" name="q11" class="typeB"> 現状維持でよい</label>
+        <label><input type="radio" name="q11" class=""> 厳しくすべきではない </label>
+        <label><input type="radio" name="q11" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q12. 待機児童問題について	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          待機児童とは、親が共働きなどの理由で保育所等に入所申請をしているが入ることのできない状態にある、未就学児の子どものことをいいます。仙台市には、2017年4月1日現在で232人いるとされています。待機児童を解消することで女性の社会進出がすすむという効果がある一方で、保育士の数や質の確保など多くの課題があると言われています</p>
+        <label><input type="radio" name="q12" class="typeA typeC typeD"> 任期中の待機児童ゼロに取り組む </label>
+        <label><input type="radio" name="q12" class="typeB"> 段階的に減少に向けて取り組む</label>
+        <label><input type="radio" name="q12" class=""> 現状維持で良い </label>
+        <label><input type="radio" name="q12" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q13. 高等教育進学希望者を対象とした、市独自の新しい給付型奨学金をつくるべきか	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          国公立大学の授業料高騰などにより、卒業後に奨学金（日本学生支援機構による貸与奨学金）の返済に苦しむ若者が社会問題となっています。自治体による奨学金は、若者の定着につながる一方、多くの財源を必要とします。<br>
+          なお国公立の高校については授業料は無償化されているほか、私立高校等に通う低所得世帯については、宮城県から給付型の奨学金が支給されています。</p>
+        <label><input type="radio" name="q13" class="typeB typeC"> 全学生を選考対象につくるべき </label>
+        <label><input type="radio" name="q13" class="typeA"> 経済的貧困者のみ対象につくるべき</label>
+        <label><input type="radio" name="q13" class="typeD"> 必要ない </label>
+        <label><input type="radio" name="q13" class=""> 無回答（わからない）</label>
+      </li>
+      <li class="radio_button_wrapper">
+        <span>Q14. 平成29年10月から行われる、乳幼児（小学校就学まで）への医療費実質無料化について	</span>
+        <!-- 表示・非表示ボタン -->
+        <p class="openBtn"><i class="fa fa-chevron-down faColor">　</i>補足説明を読む</p>
+        <!-- 説明文 -->
+        <p class="textArea">
+          今年10月から、0歳から小学校就学前までの乳幼児は医療機関での窓口負担金額が0円になります。またこれまで小学3年生までだった医療費助成の対象が中学生までに広げられ、入院時も負担額が1日500円までとなります（ただし、一定以上の所得がある場合や、健康保険に加入してない場合、生活保護を受けている場合は対象外）。<br>
+          なお未就学児までの助成金は、宮城県が各市町村に対して補助を行っています。</p>
+        <label><input type="radio" name="q14" class=""> さらに対象年齢を引き上げるべき </label>
+        <label><input type="radio" name="q14" class="typeA typeB"> 新制度を維持する</label>
+        <label><input type="radio" name="q14" class="typeD"> 無料化ではなく一部負担に戻すべき </label>
+        <label><input type="radio" name="q14" class=""> 無回答（わからない）</label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <span>市の財源を使って「特に建設・再整備すべき」と考える施設を３つまで選んでください</span>
+        <label for=""><input type="checkbox" class="under3-b">医療機関</label>
+        <label for=""><input type="checkbox" class="under3-b typeA typeB typeC">福祉施設（児童・高齢者・障害者等）</label>
+        <label for=""><input type="checkbox" class="under3-b typeD">小中学校校舎</label>
+        <label for=""><input type="checkbox" class="under3-b">公園</label>
+        <label for=""><input type="checkbox" class="under3-b typeD typeC">スポーツ施設（運動場・体育館・プール等）</label>
+        <label for=""><input type="checkbox" class="under3-b">文化施設（図書館・美術館・科学館等）</label>
+        <label for=""><input type="checkbox" class="under3-b">劇場・コンサートホール</label>
+        <label for=""><input type="checkbox" class="under3-b typeA typeB">バス路線</label>
+        <label for=""><input type="checkbox" class="under3-b typeC">バス路線に変わる新たな公共交通</label>
+        <label for=""><input type="checkbox" class="under3-b typeB typeD">一般道路</label>
+        <label for=""><input type="checkbox" class="under3-b typeA">地下街</label>
+        <label for=""><input type="checkbox" class="under3-b">駐車場・駐輪場</label>
+      </li>
+    </ul>
+    <button class="shindan" id="oneclick" href="#result" onclick="this.disabled = true;">診断する</button>
+    <a href="2017sendaimayor-answer.html" class="center small block">診断せずに候補者の回答を見る</a>
+    <div class="scrollbox">
+      <a href="#result" class="hidescrollbox"><span></span>診断ボタンを押してスクロール</a>
+    </div>
+  </div>
+
+  <div class="result resultA">
+    <h2>あなたにオススメの候補者は...<br>
+      <img src="img/hayashi.png" alt="林宙紀"><strong>
+        <ruby>
+          林
+          <rp>（</rp>
+          <rt>はやし</rt>
+          <rp>）</rp>
+          宙紀
+          <rp>（</rp>
+          <rt>ひろき</rt>
+          <rp>）</rp>
+        </ruby>
+      </strong></h2>
+    <p>あなたには林宙紀氏がオススメ！ メリハリのある政策で、仙台を150万人都市にしましょう〜。</p>
+    <section class="abcd">
+      <h3>候補者別一致度</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="test-circle"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle2"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle3"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle4"></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="center"><a class="kaito" href="2017sendaimayor-answer.html"><span>全ての候補者の各回答はコチラ</span></a></p>
+
+    <div class="share">
+      <a class="small center block" href="http://tohoku360.com/sendai-mayor-election/"><img
+          src="img/header-2017sityosen.jpg"
+          alt="仙台市長選2017">市長選に関してより詳しくなりたい方は、TOHOKU360の仙台市長選特集をご覧ください！</a>
+      <p>仙台市長選2017ボートマッチをシェアして<br>選挙をもっと盛り上げよう！</p>
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+      </div>
+      <p class="small">診断は機械的なものなので、意外な結果になるかもしれません。また、無回答を選んだ設問がある候補者はマッチ率が低く表示される傾向があります。<br>表示された数字だけを参考にするのではなく、各候補者の主張に関心を持つ入り口にしていただたら、幸いです！
+      </p>
+    </div>
+  </div>
+  <div class="result resultB">
+    <h2>あなたにオススメの候補者は...<br>
+      <img src="img/sugawara.png" alt="菅原裕典"><strong>
+        <ruby>
+          菅原
+          <rp>（</rp>
+          <rt>すがわら</rt>
+          <rp>）</rp>
+          裕典
+          <rp>（</rp>
+          <rt>ひろのり</rt>
+          <rp>）</rp>
+        </ruby>
+      </strong></h2>
+    <p>あなたには、奥山市長や村井知事も支援する菅原裕典氏がオススメ！ 経営者の視点で仙台市を改革しよう！</p>
+    <section class="abcd">
+      <h3>候補者別一致度</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="test-circle5"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle6"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle7"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle8"></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="center"><a class="kaito" href="2017sendaimayor-answer.html"><span>全ての候補者の各回答はコチラ</span></a></p>
+
+    <div class="share">
+      <a class="small center block" href="http://tohoku360.com/sendai-mayor-election/"><img
+          src="img/header-2017sityosen.jpg"
+          alt="仙台市長選2017">市長選に関してより詳しくなりたい方は、TOHOKU360の仙台市長選特集をご覧ください！</a>
+      <p>仙台市長選2017ボートマッチをシェアして<br>選挙をもっと盛り上げよう！</p>
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+      </div>
+      <p class="small">診断は機械的なものなので、意外な結果になるかもしれません。また、無回答を選んだ設問がある候補者はマッチ率が低く表示される傾向があります。<br>表示された数字だけを参考にするのではなく、各候補者の主張に関心を持つ入り口にしていただたら、幸いです！
+      </p>
+    </div>
+  </div>
+  <div class="result resultC">
+    <h2>あなたにオススメの候補者は...<br>
+      <img src="img/kori.png" alt="郡和子"><strong>
+        <ruby>
+          郡
+          <rp>（</rp>
+          <rt>こおり</rt>
+          <rp>）</rp>
+          和子
+          <rp>（</rp>
+          <rt>かずこ</rt>
+          <rp>）</rp>
+        </ruby>
+      </strong></h2>
+    <p>あなたには郡和子氏がオススメ！ 市民活動を大事にしながら、女性のチカラで仙台をよりユニバーサルな街に！</p>
+    <section class="abcd">
+      <h3>候補者別一致度</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="test-circle9"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle10"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle11"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle12"></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="center"><a class="kaito" href="2017sendaimayor-answer.html"><span>全ての候補者の各回答はコチラ</span></a></p>
+
+    <div class="share">
+      <a class="small center block" href="http://tohoku360.com/sendai-mayor-election/"><img
+          src="img/header-2017sityosen.jpg"
+          alt="仙台市長選2017">市長選に関してより詳しくなりたい方は、TOHOKU360の仙台市長選特集をご覧ください！</a>
+      <p>仙台市長選2017ボートマッチをシェアして<br>選挙をもっと盛り上げよう！</p>
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+      </div>
+      <p class="small">診断は機械的なものなので、意外な結果になるかもしれません。また、無回答を選んだ設問がある候補者はマッチ率が低く表示される傾向があります。<br>表示された数字だけを参考にするのではなく、各候補者の主張に関心を持つ入り口にしていただたら、幸いです！
+      </p>
+    </div>
+  </div>
+  <div class="result resultD">
+    <h2>あなたにオススメの候補者は...<br>
+      <img src="img/okubo.png" alt="大久保三代"><strong>
+        <ruby>
+          大久保
+          <rp>（</rp>
+          <rt>おおくぼ</rt>
+          <rp>）</rp>
+          三代
+          <rp>（</rp>
+          <rt>みよ</rt>
+          <rp>）</rp>
+        </ruby>
+      </strong></h2>
+    <p>あなたには、子育てしながら立候補中の大久保三代氏がオススメ！ 財政健全化を軸に鋭い主張をもち、既得権益に踏み込もう！</p>
+    <section class="abcd">
+      <h3>候補者別一致度</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="test-circle13"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle14"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle15"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle16"></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="center"><a class="kaito" href="2017sendaimayor-answer.html"><span>全ての候補者の各回答はコチラ</span></a></p>
+
+    <div class="share">
+      <a class="small center block" href="http://tohoku360.com/sendai-mayor-election/"><img
+          src="img/header-2017sityosen.jpg"
+          alt="仙台市長選2017">市長選に関してより詳しくなりたい方は、TOHOKU360の仙台市長選特集をご覧ください！</a>
+      <p>仙台市長選2017ボートマッチをシェアして<br>選挙をもっと盛り上げよう！</p>
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+      </div>
+      <p class="small">診断は機械的なものなので、意外な結果になるかもしれません。また、無回答を選んだ設問がある候補者はマッチ率が低く表示される傾向があります。<br>表示された数字だけを参考にするのではなく、各候補者の主張に関心を持つ入り口にしていただたら、幸いです！
+      </p>
+    </div>
+  </div>
+  <div class="result resultE">
+    <h2>複数候補がマッチングしました！</h2>>
+    <section class="abcd">
+      <h3>候補者別一致度</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="test-circle17"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle18"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle19"></div>
+        </div>
+        <div class="col-sm-6">
+          <div id="test-circle20"></div>
+        </div>
+      </div>
+    </section>
+
+    <p class="center"><a class="kaito" href="2017sendaimayor-answer.html"><span>全ての候補者の各回答はコチラ</span></a></p>
+
+    <div class="share">
+      <a class="small center block" href="http://tohoku360.com/sendai-mayor-election/"><img
+          src="img/header-2017sityosen.jpg"
+          alt="仙台市長選2017">市長選に関してより詳しくなりたい方は、TOHOKU360の仙台市長選特集をご覧ください↑</a>
+      <p>仙台市長選2017ボートマッチをシェアして<br>選挙をもっと盛り上げよう！</p>
+      <div class="center">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://mediage.org/votematch/" data-via="mediage_info" data-lang="ja" data-size="large"
+           data-hashtags="仙台市長選">ツイート</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://mediage.org/votematch/" data-layout="button_count"
+             data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmediage.org%2Fvotematch%2F&amp;src=sdkpreparse">シェア</a>
+        </div>
+      </div>
+      <p class="small">診断は機械的なものなので、意外な結果になるかもしれません。また、無回答を選んだ設問がある候補者はマッチ率が低く表示される傾向があります。<br>表示された数字だけを参考にするのではなく、各候補者の主張に関心を持つ入り口にしていただたら、幸いです！
+      </p>
+    </div>
+  </div>
+</div>
+<p><a href="http://mediage.org/" class="small center block">メディアージのトップページに戻る</a></p>
+
+<footer class="footer">
+  <div class="container-f">
+    <p class="text-muted center">Copyright © 2017 — TOHOKU360 × Mediage with yurutech.</p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<script src="js/remodal.min.js"></script>
+</body>
+</html>

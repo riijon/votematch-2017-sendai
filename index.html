@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>仙台市長選2017_ボートマッチ</title>
+    <meta name="description" content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。">
+    <meta property="og:title" content="仙台市長選2017_ボートマッチ"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://mediage.org/votematch"/>
+    <meta property="og:image" content="http://mediage.org/votematch/img/snsogp.png"/>
+    <meta property="og:site_name" content="仙台市長選2017_ボートマッチ"/>
+    <meta property="og:description" content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。"/>
+
+    <!-- Facebook用設定 -->
+    <meta property="fb:app_id" content="727427227437012"/>
+
+    <!-- ※Twitter共通設定 -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mediage_info">
+    <meta name="twitter:creator" content="@mediage_info">
+    <meta name="twitter:title" content="仙台市長選2017_ボートマッチ">
+    <meta name="twitter:description"
+          content="仙台市長選2017_ボートマッチは、有権者（あなた）と立候補者の双方に同内容のアンケートに答えてもらい、政策についての考えのマッチ率（一致度）を測定することができるインターネットサービスです。">
+    <meta name="twitter:image" content="http://mediage.org/votematch/img/snsogp.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta http-equiv="refresh" content="9;URL=2017sendaimayor.html">
+
+    <link rel="stylesheet" href="css/reset.css"><!--リセット-->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/start.css">
+
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/t.min.js"></script>
+    <script type="text/javascript" src="js/shindan.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48937819-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '727427227437012',
+            xfbml      : true,
+            version    : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="container flex horizontal">
+
+    <div class="banner flex vertical grayscale shadow tobo">
+        <pre id="demo_2">「誰に投票したらいいんだろう」<del><s>pink,white</s>仙台しちょうせん</del>  #仙台市長選<br><ins>0.5</ins>そんなあなたに、ちょっぴり役立つかもしれない</pre>
+        <a id="contact-link" href="2017sendaimayor.html" class="text nodecoration flex horizontal"><p>Sendai Vote Match 2017</p><i
+                class="material-icons">send</i></a>
+    </div>
+</div>
+
+<script>
+    /* just added so that the animation continues even when you're not hovering anymore */
+
+    var timeOut;
+    document.getElementById("contact-link").addEventListener('mouseover', function () {
+        document.getElementById("contact-link").className = "active text nodecoration flex horizontal";
+        clearTimeout(timeOut);
+        timeOut = setTimeout(function () {
+            document.getElementById("contact-link").className = "text nodecoration flex horizontal";
+        }, 4000);
+    })
+
+    $('#demo_2').t({
+        speed:90,
+        blink:300,
+        typing:function(e,char,chars_left,chars_total){
+            e.prev('h2').text(~~(100-(((chars_left/chars_total)*100)))+'%');
+        },
+        fin:function(e){setTimeout(function(){e.prev('h2').text('#2')},500);}
+    });
+
+    $(function(){
+        $("#contact-link").css({opacity:'0'});
+        setTimeout(function(){
+            $("#contact-link").stop().animate({opacity:'1'},1000);
+        },300);
+    });
+</script>
+
+</body>
+</html>

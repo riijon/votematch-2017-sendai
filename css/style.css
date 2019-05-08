@@ -1,0 +1,702 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    /* プロポーショナルメトリクスを有効にする指定 */
+    font-feature-settings : "palt" 1;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+#wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+#wrapper h1 {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#wrapper ul {
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#wrapper ul li {
+    margin-bottom: 30px;
+}
+
+#wrapper ul li:last-child {
+    margin-bottom: 0;
+}
+
+#wrapper ul li span {
+    display: inline-block;
+    /*width: 350px;*/
+    margin-bottom: 5px;
+}
+
+#wrapper button {
+    background: #5c90d2;
+    width: 250px;
+    display: block;
+    margin: 20px auto 30px;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#wrapper .result {
+    padding: 20px;
+    border: 3px solid #5c90d2;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: none;
+}
+
+#wrapper .result h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#wrapper .result h2 strong {
+    font-size: 24px;
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.result h2 img {
+    width: 60%;
+    display: block;
+    margin: 15px auto;
+}
+
+/*pc円グラフ*/
+section.abcd {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .col-lg-2 {
+        width: 49%;
+    }
+}
+
+/*share*/
+.share img {
+    margin-top: 40px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.share p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.fb-share-button.fb_iframe_widget {
+    display: inline-flex;
+}
+
+/*ボートマッチとはボタン*/
+.button-1 {
+    position: relative;
+    display: inline-block;
+    padding: .65em 4em;
+    border: 2px solid #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 242px;
+    margin: 20px auto;
+}
+.button-1::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fe5f95;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.button-1:hover {
+    color: #fff;
+}
+.button-1:hover::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*モーダルウィンドウ*/
+.m20 {
+    margin: 20px 0;
+}
+
+.modal-w {
+    width: 85%;
+}
+
+.modal-w p {
+    line-height: 2em;
+}
+
+/* 表示ボタン */
+.openBtn {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #9FD6D2;
+    border-left: 10px solid #9FD6D2;
+    color: #666;
+}
+
+.openBtn:hover {
+    opacity: 0.7;
+}
+
+/* 説明文 */
+.textArea {
+    display: none;
+    padding: 10px 10px 30px 50px !important;
+    color: #666;
+}
+
+/* 表示ボタン ー 逆三角アイコン */
+.faColor {
+    color: #9FD6D2;
+}
+
+/*スクロールボックス*/
+.scrollbox {
+    height: 100px;
+}
+
+.scrollbox a {
+    color: #9a9a9a;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    top: 20px;
+    z-index: 2;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+}
+
+.scrollbox a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+/*回答はこちらボタン*/
+.kaito {
+    display: inline-block;
+    padding: .65em 2em;
+    background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
+    background: linear-gradient(#fe5f95 , #ff3f7f);
+    border: 1px solid #fe3276;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.kaito span {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.6em;
+}
+.kaito span::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: '\002605';
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    -webkit-animation: icon 1.5s ease-in-out infinite;
+    animation: icon 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes icon {
+    50% { -webkit-transform: rotateY(360deg); }
+}
+@keyframes icon {
+    50% { transform: rotateY(360deg); }
+}
+
+
+/*回答ページ*/
+#wrapper2 {
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+
+#wrapper2 h1 {
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#wrapper2 p {
+    margin: 30px 0 20px;
+    font-size: 18px;
+}
+
+table {
+    border: 1px solid #aaa;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 6px;
+}
+
+th {
+    max-width: 280px;
+}
+
+td {
+    max-width: 150px;
+}
+
+table thead th,
+table tbody th,
+table tbody td {
+    padding: 0.6em 1em;
+    border-bottom: 1px solid #aaa;
+}
+
+table thead th {
+    background-color: #ddd;
+}
+
+table tbody th {
+    background-color: #eee;
+}
+
+table thead th + th,
+table tbody td {
+    border-left: 1px solid #aaa;
+}
+
+table tbody tr:last-child th,
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table thead tr:first-child th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+table thead tr:first-child th:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+table tbody tr:last-child th:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+table tbody tr:last-child th:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+.yes {
+    background-color: #ffd700;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*index.html*/
+.background {
+    width: 100%;
+    height: 0;
+    padding-top: calc(300 / 1000 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+    background: url(http://mediage.org/demo2/img/maxresdefault.jpg) center center / cover no-repeat;
+}
+
+/*top banner*/
+.container {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #2196F3;
+}
+
+/* for background beginning */
+
+.container > .banner {
+    background-color: #F5F3F3;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* for background end */
+
+.container > .banner {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    max-height: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+}
+
+.container > .banner > p {
+    color: #0D47A1;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.container > .banner > a {
+    color: #0D47A1;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.container > .banner > a > p {
+    margin: 3px 6px;
+}
+
+.container > .banner > a > i {
+    color: #BDBDBD;
+}
+
+.container > .banner > a > i:before {
+    display: inline-block;
+    /* filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); -webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); */
+    color: #0D47A1;
+    content: "send";
+    position: relative;
+    top: 0px;
+    left: 23px;
+    z-index: 1;
+    transition: 400ms left ease-in-out;
+    -webkit-transition: 400ms left ease-in-out;
+}
+
+.container > .banner > a.active > i:before, .container > .banner > a:hover > i:before,
+.container > .banner > a:focus > i:before {
+    animation: paper-plane 4s ease-in-out;
+    -webkit-animation: paper-plane 4s ease-in-out;
+}
+
+
+/* animation beginning */
+
+@-webkit-keyframes paper-plane {
+    0% {
+        left: 23px;
+        top: 0px;
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        left: 125px;
+        -webkit-transform: rotate(-90deg);
+    }
+    40% {
+        top: -60px;
+        -webkit-transform: rotate(-180deg);
+    }
+    60% {
+        left: -225px;
+        -webkit-transform: rotate(-270deg);
+    }
+    80% {
+        top: 0px;
+        -webkit-transform: rotate(-360deg);
+    }
+    100% {
+        left: 23px;
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes paper-plane {
+    0% {
+        left: 23px;
+        top: 0px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    20% {
+        left: 125px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    40% {
+        top: -60px;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    60% {
+        left: -225px;
+        -webkit-transform: rotate(-270deg);
+        transform: rotate(-270deg);
+    }
+    80% {
+        top: 0px;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+    100% {
+        left: 23px;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg)
+    }
+}
+
+
+/* animation end */
+
+
+/* global classes beginning */
+
+.heading {
+    color: #222;
+}
+
+.text {
+    font-family: Josefin Sans, sans-serif;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.text.nodecoration {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text.black {
+    color: #444;
+}
+
+.text.white {
+    color: #F5F3F3;
+}
+
+.text.outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.text.outline.white {
+    -webkit-text-stroke-color: #FCFCFC;
+}
+
+.text.outline.black {
+    -webkit-text-stroke-color: #444;
+}
+
+.offwhite-light {
+    background-color: #FCFCFC;
+}
+
+.offwhite-dark {
+    background-color: #F5F3F3;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.shadow {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.26);
+}
+
+.shadow.bottom {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.shadow.top {
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.shadow.tobo {
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26), 0px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.flex.vertical {
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.flex.horizontal {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    color: #0D47A1;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+/* global classes end */
+
+.block {
+    display: block;
+}
+
+.smallest {
+    width: 50px;
+}
+
+/*フッター*/
+.footer {
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+body > .container-f {
+    padding: 60px 15px 0;
+}
+.container-f .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container-f {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-f p {
+    padding-top: 10px;
+}
+
+/*fontawsome*/
+.fa-blue:before {
+    color: #0D47A1;
+}
